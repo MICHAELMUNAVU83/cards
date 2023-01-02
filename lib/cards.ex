@@ -57,6 +57,18 @@ defmodule Cards do
 
     end
   end
+# pipe operator - takes the result from up and takes consistent first arguments
+
+  def create_hand(hand_size) do
+
+
+      Cards.create_deck
+      |>Cards.shuffle
+      |>Cards.deal(hand_size)
+
+
+  end
+
 
 
 
